@@ -17,7 +17,7 @@ class Hope extends StatelessWidget{
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              //Aqui se crean 10 botones con la funcion creTecla
+              //Aqui se crean 10 botones con la funcion crearTecla
               creaTecla(Colors.redAccent, 1),
               creaTecla(Colors.green, 2),
               creaTecla(Colors.lightBlue, 3),
