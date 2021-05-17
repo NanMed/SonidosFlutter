@@ -18,16 +18,16 @@ class Hope extends StatelessWidget{
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               //Aqui se crean 10 botones con la funcion crearTecla
-              creaTecla(Colors.redAccent, 1),
-              creaTecla(Colors.green, 2),
-              creaTecla(Colors.lightBlue, 3),
-              creaTecla(Colors.red, 4),
-              creaTecla(Colors.yellow, 5),
-              creaTecla(Colors.deepPurpleAccent, 6),
-              creaTecla(Colors.lightGreen, 7),
-              creaTecla(Colors.blueAccent, 8),
-              creaTecla(Colors.lightGreenAccent, 9),
-              creaTecla(Colors.amber, 10)
+              creaTecla(color: Colors.redAccent, nota: 1),
+              creaTecla(color: Colors.green, nota: 2),
+              creaTecla(color: Colors.lightBlue, nota: 3),
+              creaTecla(color: Colors.red, nota: 4),
+              creaTecla(color: Colors.yellow, nota: 5),
+              creaTecla(color: Colors.deepPurpleAccent, nota: 6),
+              creaTecla(color: Colors.lightGreen, nota: 7),
+              creaTecla(color: Colors.blueAccent, nota: 8),
+              creaTecla(color: Colors.lightGreenAccent, nota: 9),
+              creaTecla(color: Colors.amber, nota: 10)
             ],
           ),
         ),
@@ -40,7 +40,7 @@ class Hope extends StatelessWidget{
     audioPlayer.play('sound$nota.mp3');
   }
 
-  Expanded creaTecla(Color color, int nota){
+  Expanded creaTecla({Color color, int nota}){
     return Expanded(
         child: FlatButton(
           onPressed: (){
